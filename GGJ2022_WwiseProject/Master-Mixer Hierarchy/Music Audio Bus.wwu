@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3B41E8A7-559F-45C8-9C00-D8F3C70B1B24}" SchemaVersion="103" RootDocumentID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}" ParentDocumentID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}">
+	<Busses>
+		<WorkUnit Name="Music Audio Bus" ID="{3B41E8A7-559F-45C8-9C00-D8F3C70B1B24}" OwnerID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" PersistMode="Nested"/>
+	</Busses>
+</WwiseDocument>
