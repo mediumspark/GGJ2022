@@ -8,7 +8,7 @@ public class DeckManager : MonoBehaviour
 {
     public static DeckManager instance;
     DeckGenerator DeckGen;
-    public Deck ADeckSO; 
+    public AdventureDeckScriptableObject ADeckSO; 
 
     [SerializeField]
     GameObject CurrentCard;
