@@ -1852,6 +1852,10 @@
 								<Property Name="WetLevel" Type="Real32" Value="-6"/>
 							</PropertyList>
 						</Effect>
+						<Effect Name="New_SoundSeed_Impact" ID="{AE2FA951-1FB9-4599-94D9-0FDB3A7E01B1}" PluginName="SoundSeed Impact" CompanyID="0" PluginID="116" PluginType="3">							<PluginData>
+	<ModeList GlobalGain="0"/>
+</PluginData>
+						</Effect>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Tremolo" ID="{F9C07D78-BC4E-4386-9433-A8D7BDDDAE14}" ShortID="998026893">

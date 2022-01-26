@@ -1,6 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{21D2C4E7-5646-4319-8971-8185F98E13AE}" SchemaVersion="103" RootDocumentID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}" ParentDocumentID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}">
 	<Busses>
-		<WorkUnit Name="Ambiance Audio Bus" ID="{21D2C4E7-5646-4319-8971-8185F98E13AE}" OwnerID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" PersistMode="Nested"/>
+		<WorkUnit Name="Ambiance Audio Bus" ID="{21D2C4E7-5646-4319-8971-8185F98E13AE}" OwnerID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" PersistMode="Nested">
+			<ChildrenList>
+				<Bus Name="Master_Ambi" ID="{32A2625E-6398-4642-B7E2-407BC2577B65}">
+					<PropertyList>
+						<Property Name="BusChannelConfig" Type="int32">
+							<ValueList>
+								<Value>516</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ChildrenList>
+						<Bus Name="Dark_Forest" ID="{7FC42568-BB6D-462D-983C-F4693E2F1021}">
+							<ChildrenList>
+								<Bus Name="Ambi_Creatures" ID="{B38CB6A1-91AB-42D8-BE79-3847B469DA94}">
+									<ChildrenList>
+										<Bus Name="Bugs" ID="{9AD0D0B3-0F8E-45EC-B28D-6A58425A3444}">
+											<ObjectLists/>
+										</Bus>
+										<Bus Name="Wolves" ID="{B16A0C5E-B54D-4685-A23A-501E6F0E1659}">
+											<ReferenceList>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Distant_Reverb" ID="{14F2AAA8-DB5E-423E-A9C0-51CE57033483}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</Bus>
+									</ChildrenList>
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="Ambi_Meters" ID="{310D3FDC-CCB4-4209-865C-AD928CC09456}">
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="Ambi_Nature" ID="{AC32536B-1D40-43D3-AFA7-ECECCE392983}">
+									<ChildrenList>
+										<Bus Name="Ambi_Trees" ID="{525A0E4D-91B2-47D8-99CA-BF87CDB70F78}">
+											<ObjectLists/>
+										</Bus>
+										<Bus Name="Ambi_Wind" ID="{71317083-2AB3-4A84-BBA9-08AAA25B8417}">
+											<ObjectLists/>
+										</Bus>
+									</ChildrenList>
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="Reverbs" ID="{310F1EB6-A08E-4396-A997-57E0AB29B563}">
+									<ChildrenList>
+										<AuxBus Name="Distant_Reverb" ID="{14F2AAA8-DB5E-423E-A9C0-51CE57033483}">
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+									</ChildrenList>
+									<ObjectLists/>
+								</Bus>
+							</ChildrenList>
+							<ObjectLists/>
+						</Bus>
+					</ChildrenList>
+					<ObjectLists/>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
 	</Busses>
 </WwiseDocument>
