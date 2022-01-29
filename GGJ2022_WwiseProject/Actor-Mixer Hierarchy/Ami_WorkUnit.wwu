@@ -1,0 +1,2173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EC56A686-A658-4D81-9E2D-95AAE42FB614}" SchemaVersion="103" RootDocumentID="{B1A119DA-B5D8-450E-A7E1-1E6ED30ADB1D}" ParentDocumentID="{B1A119DA-B5D8-450E-A7E1-1E6ED30ADB1D}">
+	<AudioObjects>
+		<WorkUnit Name="Ami_WorkUnit" ID="{EC56A686-A658-4D81-9E2D-95AAE42FB614}" OwnerID="{B1A119DA-B5D8-450E-A7E1-1E6ED30ADB1D}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Ambiences" ID="{F27579DD-62A9-440D-9E6C-C5460B44B233}" ShortID="595078802">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="Ambience_Dark_Forest" ID="{857EF0AE-3E24-49D2-96ED-C2FBAB30BA62}" ShortID="1034045328">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="Wind_Loop" ID="{7E5AE414-33AB-4E0C-8026-322F7D8AC21A}" ShortID="6098827">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambi_Wind" ID="{71317083-2AB3-4A84-BBA9-08AAA25B8417}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Wind_Steady_Loop" ID="{93008B98-70FF-4AF1-BD77-A263220AF8C8}" ShortID="993157642">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>68</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-13</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ESM_Wind_Loop_Distant_Air_Steady_4" ID="{E3211AB1-0573-4F6D-9F5F-0A224B8A2859}">
+													<Language>SFX</Language>
+													<AudioFile>ESM_Wind_Loop_Distant_Air_Steady_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1003869852"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ESM_Wind_Loop_Distant_Air_Steady_4" ID="{E3211AB1-0573-4F6D-9F5F-0A224B8A2859}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ESM_Wind_Loop_Rocky_Mountian_Cave_Dark_Steady_Medium_Bass_2_Cold_Winter" ID="{F5BE4DC1-4D68-44B1-A714-451D654E622F}" ShortID="262350240">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-7</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ESM_Wind_Loop_Rocky_Mountian_Cave_Dark_Steady_Medium_Bass_2_Cold_Winter" ID="{21A52F8B-65E4-4725-BD92-801E4670EEA1}">
+													<Language>SFX</Language>
+													<AudioFile>ESM_Wind_Loop_Rocky_Mountian_Cave_Dark_Steady_Medium_Bass_2_Cold_Winter.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="613731508"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ESM_Wind_Loop_Rocky_Mountian_Cave_Dark_Steady_Medium_Bass_2_Cold_Winter" ID="{21A52F8B-65E4-4725-BD92-801E4670EEA1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Wind_Heavy_Dry_Leaves" ID="{A989CFA5-9740-4154-95DD-2253649C1EED}" ShortID="826796525">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-14</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ambi_Trees" ID="{525A0E4D-91B2-47D8-99CA-BF87CDB70F78}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BRS_Wind_Heavy_Dry_Leaves_1" ID="{6EA7C9CE-58E4-4057-A45A-0F36967484FB}">
+													<Language>SFX</Language>
+													<AudioFile>BRS_Wind_Heavy_Dry_Leaves_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="432897322"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="BRS_Wind_Heavy_Dry_Leaves_1" ID="{6EA7C9CE-58E4-4057-A45A-0F36967484FB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="EX_SA_ambience_binaural_windy_magical_mountain_binaural" ID="{DE177DC9-404F-4170-83C7-374185110778}" ShortID="390036636">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-300</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-20</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EX_SA_ambience_binaural_windy_magical_mountain_binaural" ID="{7730EE89-6A17-4840-B5E8-8E1A5D1D723D}">
+													<PropertyList>
+														<Property Name="ChannelConfigOverride" Type="int64" Value="514"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>EX_SA_ambience_binaural_windy_magical_mountain_binaural.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="861828708"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="EX_SA_ambience_binaural_windy_magical_mountain_binaural" ID="{7730EE89-6A17-4840-B5E8-8E1A5D1D723D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</BlendContainer>
+								<BlendContainer Name="Bugs" ID="{A51CA737-ADE3-4DA4-9B91-296D41F4B3DC}" ShortID="507922727">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bugs" ID="{9AD0D0B3-0F8E-45EC-B28D-6A58425A3444}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ambisonic_Crickets" ID="{6CE4233C-A3BA-46CE-AFC9-D109E77A1AAE}" ShortID="803600537">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ambisonic_Crickets" ID="{22493138-6D70-4323-8586-4F9B7FB45476}">
+													<Language>SFX</Language>
+													<AudioFile>Ambisonic_Crickets.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="14205749"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ambisonic_Crickets" ID="{22493138-6D70-4323-8586-4F9B7FB45476}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</BlendContainer>
+								<BlendContainer Name="Wolves" ID="{B3849482-08A8-4F08-AAB3-010C62B66666}" ShortID="16947103">
+									<PropertyList>
+										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>14</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-22</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Wolves" ID="{B16A0C5E-B54D-4685-A23A-501E6F0E1659}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Wolf Threaten" ID="{81812297-DFC5-4857-9A2C-FA7A4580D8F8}" ShortID="507477393">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{510C00CC-EC02-40E5-B61C-0B643C33A47C}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="15"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{2DCA55BD-D759-49A0-9445-B3FB1A83B0AB}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="600"/>
+																	<Property Name="Min" Type="Real64" Value="-600"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="7.5">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{AF1A0D75-9D41-4EBC-8FF1-552FD450B272}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="7"/>
+																	<Property Name="Min" Type="Real64" Value="-4"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-11</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{0323AA22-C6E6-4A03-883F-D8F77D294EC5}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-27"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Wolves" ID="{B16A0C5E-B54D-4685-A23A-501E6F0E1659}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Wolf_Threatening_L" ID="{19EE2340-1E6B-421C-A4AC-315A88728758}" ShortID="540826877">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations" ID="{9FCC8BB8-F380-4BD0-9907-93CA9426711C}">
+															<Language>SFX</Language>
+															<AudioFile>SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="853922027"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{FE2A1622-8021-4418-8FD3-729BAD0D9131}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="-100"/>
+																<Property Name="PanY" Type="Real64" Value="100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations" ID="{9FCC8BB8-F380-4BD0-9907-93CA9426711C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wolf_Threatening_CL" ID="{ED561449-86F4-451A-B83D-5D74320F12B2}" ShortID="923586332">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations" ID="{C45EB643-1718-4E65-845A-ABDB8EA2B220}">
+															<Language>SFX</Language>
+															<AudioFile>SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="853922027"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{F145C4E6-55DA-4995-853E-E416E86C03E6}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="-50"/>
+																<Property Name="PanY" Type="Real64" Value="100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations" ID="{C45EB643-1718-4E65-845A-ABDB8EA2B220}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wolf_Threatening_CR" ID="{0E7FA644-5C69-413B-93F9-CB55D80F3316}" ShortID="547454471">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations" ID="{2EC727BD-EBCD-4B45-9745-F86AF43FD3DE}">
+															<Language>SFX</Language>
+															<AudioFile>SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="853922027"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{3E87209B-8841-4DFF-9FD5-7B2FFF0064CB}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="50"/>
+																<Property Name="PanY" Type="Real64" Value="100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations" ID="{2EC727BD-EBCD-4B45-9745-F86AF43FD3DE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wolf_Threatening_R" ID="{F23E9079-EA33-4ABC-9A8B-A020CED42C22}" ShortID="191299857">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{C3C2924A-C1ED-4AAE-837D-859865CE77F3}">
+																		<PropertyList>
+																			<Property Name="Max" Type="Real64" Value="600"/>
+																			<Property Name="Min" Type="Real64" Value="-600"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{25C81D44-AA96-462F-AA8D-2C665252C671}">
+																		<PropertyList>
+																			<Property Name="Min" Type="Real64" Value="-18"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations" ID="{B172C8DA-C342-4EE9-B9E8-C1E1642B7027}">
+															<Language>SFX</Language>
+															<AudioFile>SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="853922027"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{DB6EDE84-9686-49EA-A239-6D4C70B97E9D}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="100"/>
+																<Property Name="PanY" Type="Real64" Value="100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations" ID="{B172C8DA-C342-4EE9-B9E8-C1E1642B7027}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wolf_Threatening_CL_01" ID="{02F0A487-8BCE-49CD-B254-996E5AF4D813}" ShortID="239646353">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Wolves" ID="{B16A0C5E-B54D-4685-A23A-501E6F0E1659}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations" ID="{7A57A034-6118-402D-B593-EDD59A764B9D}">
+															<Language>SFX</Language>
+															<AudioFile>SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="853922027"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{2D695C76-ADCD-4887-9897-027284750EC4}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="-50"/>
+																<Property Name="PanY" Type="Real64" Value="-100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations" ID="{7A57A034-6118-402D-B593-EDD59A764B9D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wolf_Threatening_L_01" ID="{27A81D19-C72B-46F0-A112-5273890D4B27}" ShortID="24088052">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Wolves" ID="{B16A0C5E-B54D-4685-A23A-501E6F0E1659}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations" ID="{8B6ED6FA-311A-4BE0-96B1-4A69F4CF5357}">
+															<Language>SFX</Language>
+															<AudioFile>SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="853922027"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{1AECD61B-F01C-4546-8BA2-364ED89A3D16}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="-100"/>
+																<Property Name="PanY" Type="Real64" Value="-100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations" ID="{8B6ED6FA-311A-4BE0-96B1-4A69F4CF5357}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wolf_Threatening_CR_01" ID="{E1CAD163-6959-4EB6-91FA-C0592CEA2280}" ShortID="1069276564">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Wolves" ID="{B16A0C5E-B54D-4685-A23A-501E6F0E1659}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations" ID="{2CBC97C3-E927-4260-A0F5-D6CB0D52D7FB}">
+															<Language>SFX</Language>
+															<AudioFile>SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="853922027"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{A53D5134-06F1-4AC6-BBA0-93102EA45AF9}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="50"/>
+																<Property Name="PanY" Type="Real64" Value="-100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations" ID="{2CBC97C3-E927-4260-A0F5-D6CB0D52D7FB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wolf_Threatening_R_01" ID="{58AB3B68-FC2C-42F7-A6D1-E1CBAF81A292}" ShortID="441936721">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Wolves" ID="{B16A0C5E-B54D-4685-A23A-501E6F0E1659}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations" ID="{70C4C180-57AF-401F-9980-C2D27C7A6C4C}">
+															<Language>SFX</Language>
+															<AudioFile>SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="853922027"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{8D961395-052E-4449-95DE-685A2171EBEB}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="100"/>
+																<Property Name="PanY" Type="Real64" Value="-100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SPLC-5224_FX_Oneshot_Animal_Wolf_Threatening_Vocalizations" ID="{70C4C180-57AF-401F-9980-C2D27C7A6C4C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Wolf Growls" ID="{B9F57A6A-4931-4FB8-A644-58E8574096B1}" ShortID="611927460">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{86F85A9B-675A-4F44-BC7F-6401DD443395}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="600"/>
+																	<Property Name="Min" Type="Real64" Value="-600"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="7.5">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{15097FBA-5D5C-4B73-9294-DD9C5CA90664}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="7"/>
+																	<Property Name="Min" Type="Real64" Value="-4"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-15</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A40E02D7-02E9-4DC9-A6A5-65036CE89C5A}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-31"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Wolves" ID="{B16A0C5E-B54D-4685-A23A-501E6F0E1659}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Wolf_Howls_Solo_Expressive_FL" ID="{1A9B1FC4-A6B3-4BF5-9DDD-268ACCAC3D09}" ShortID="379652333">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive" ID="{C7B71103-87B8-4669-9735-1A026A69D73B}">
+															<Language>SFX</Language>
+															<AudioFile>SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="338091158"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{DDEEDA6A-BA2A-4A78-AA67-6C42B8D0EA8D}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="-100"/>
+																<Property Name="PanY" Type="Real64" Value="100"/>
+																<Property Name="PanZ" Type="Real64" Value="-75"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive" ID="{C7B71103-87B8-4669-9735-1A026A69D73B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wolf_Howls_Solo_Expressive_FR" ID="{1D5DB383-C6B0-4BB5-A081-0B7EF290AF7F}" ShortID="528667899">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive" ID="{31F05C5A-A716-4C8D-A12D-D46144D3BD4A}">
+															<Language>SFX</Language>
+															<AudioFile>SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="338091158"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{378FCCAB-328C-4912-9AF0-086B12FC5E9A}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="100"/>
+																<Property Name="PanY" Type="Real64" Value="100"/>
+																<Property Name="PanZ" Type="Real64" Value="-71.6"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive" ID="{31F05C5A-A716-4C8D-A12D-D46144D3BD4A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wolf_Howls_Solo_Expressive_CFL" ID="{A795614B-57C9-4262-900D-BF07047A109B}" ShortID="507829075">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive" ID="{D9C47C45-96A6-475E-8044-55252E3BB711}">
+															<Language>SFX</Language>
+															<AudioFile>SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="338091158"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{859CCD38-D26F-4A09-B2EF-DCAA1D2240AC}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="-50"/>
+																<Property Name="PanY" Type="Real64" Value="100"/>
+																<Property Name="PanZ" Type="Real64" Value="-56.8"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive" ID="{D9C47C45-96A6-475E-8044-55252E3BB711}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wolf_Howls_Solo_Expressive_FCR" ID="{881F27FE-419B-4941-9A14-B855936250F4}" ShortID="467443098">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive" ID="{63D90077-F889-45FA-A488-6DBD9ABCAC7B}">
+															<Language>SFX</Language>
+															<AudioFile>SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="338091158"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{202134A9-5ABA-4130-AA24-944EE7269615}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="50"/>
+																<Property Name="PanY" Type="Real64" Value="100"/>
+																<Property Name="PanZ" Type="Real64" Value="-75"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive" ID="{63D90077-F889-45FA-A488-6DBD9ABCAC7B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wolf_Howls_Solo_Expressive_RL" ID="{E1C44147-57F7-4914-B206-B8CBDC8C8AEE}" ShortID="588624094">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Wolves" ID="{B16A0C5E-B54D-4685-A23A-501E6F0E1659}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive" ID="{823CE834-F10B-414C-9570-58E64598943F}">
+															<Language>SFX</Language>
+															<AudioFile>SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="338091158"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{460AB780-99EE-4D86-8B29-A6EE931E2148}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="-100"/>
+																<Property Name="PanY" Type="Real64" Value="-100"/>
+																<Property Name="PanZ" Type="Real64" Value="-75"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive" ID="{823CE834-F10B-414C-9570-58E64598943F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wolf_Howls_Solo_Expressive_RR" ID="{7927D429-42D8-495A-B4C7-E782A2B1FD6C}" ShortID="24754990">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Wolves" ID="{B16A0C5E-B54D-4685-A23A-501E6F0E1659}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive" ID="{51381A27-68A9-4032-A09B-89BD4070C4EA}">
+															<Language>SFX</Language>
+															<AudioFile>SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="338091158"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{3C205CAB-2CB7-4CF7-A3EF-8030592894B4}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="100"/>
+																<Property Name="PanY" Type="Real64" Value="-100"/>
+																<Property Name="PanZ" Type="Real64" Value="-75"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive" ID="{51381A27-68A9-4032-A09B-89BD4070C4EA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wolf_Howls_Solo_Expressive_RCL" ID="{7D5D05B5-2A20-4D72-A025-4FD18D3AC477}" ShortID="637906901">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Wolves" ID="{B16A0C5E-B54D-4685-A23A-501E6F0E1659}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive" ID="{3B05A7FF-01D3-4C03-9528-4D7AA6BC4129}">
+															<Language>SFX</Language>
+															<AudioFile>SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="338091158"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{8957625A-4CFD-4D1C-A7EF-8CC417945D71}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="-50"/>
+																<Property Name="PanY" Type="Real64" Value="-100"/>
+																<Property Name="PanZ" Type="Real64" Value="-75"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive" ID="{3B05A7FF-01D3-4C03-9528-4D7AA6BC4129}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wolf_Howls_Solo_Expressive_RCR" ID="{97E26E7C-9273-43CC-BD87-246C1A499018}" ShortID="338303962">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Wolves" ID="{B16A0C5E-B54D-4685-A23A-501E6F0E1659}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive" ID="{F7350E3A-4CDE-46A8-8302-265CFB11EC6B}">
+															<Language>SFX</Language>
+															<AudioFile>SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="338091158"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{244B712A-5F2B-446C-AA82-2E9EE4D353B0}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="50"/>
+																<Property Name="PanY" Type="Real64" Value="-100"/>
+																<Property Name="PanZ" Type="Real64" Value="-75"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive" ID="{F7350E3A-4CDE-46A8-8302-265CFB11EC6B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wolf_Howls_Solo_Expressive_L" ID="{7B592138-1825-4DC0-B742-8312DBE80763}" ShortID="904289763">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Wolves" ID="{B16A0C5E-B54D-4685-A23A-501E6F0E1659}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive" ID="{D5C5D135-CE0B-471C-AC22-4204507ECD83}">
+															<Language>SFX</Language>
+															<AudioFile>SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="338091158"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{F765B1AE-27DB-4ABA-9298-68448AF93C10}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="-100"/>
+																<Property Name="PanZ" Type="Real64" Value="-75"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive" ID="{D5C5D135-CE0B-471C-AC22-4204507ECD83}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wolf_Howls_Solo_Expressive_R" ID="{4ECCC861-E613-4B52-9980-C97BBF5E4DC3}" ShortID="866086084">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Wolves" ID="{B16A0C5E-B54D-4685-A23A-501E6F0E1659}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive" ID="{226E5423-0D98-4F7E-B230-F89B4721EE4B}">
+															<Language>SFX</Language>
+															<AudioFile>SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="338091158"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{60DDBD02-2B8C-4B5E-B96C-E26EA2ECE2B5}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="100"/>
+																<Property Name="PanZ" Type="Real64" Value="-75"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SPLC-5227_FX_Oneshot_Animal_Wolf_Howls_Solo_Expressive" ID="{226E5423-0D98-4F7E-B230-F89B4721EE4B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<ObjectLists/>
+								</BlendContainer>
+							</ChildrenList>
+							<ObjectLists/>
+						</BlendContainer>
+						<ActorMixer Name="Ambience_Dark_City" ID="{D9CFE57A-E78C-4A12-A8AD-22913704C2F9}" ShortID="182834009">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="Dark_City" ID="{1FCFF088-EF78-41BD-B8CF-04BE69F28B7F}" ShortID="835067298">
+									<PropertyList>
+										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Crows" ID="{5F98B70C-7A31-43B3-A96F-DDFC3ABE1563}" ShortID="1022720829">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>27</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{87111ED6-3F92-4D90-808E-EC35586B0AEE}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="600"/>
+																	<Property Name="Min" Type="Real64" Value="-600"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-13</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{BB632673-0934-4C9C-A02B-814C13A6FAC6}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-23"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Crows" ID="{118CD479-D664-4A56-9856-D1AC2634DB16}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="BRS_Birds_UK_Crows_Lite" ID="{E1227FE4-083E-4A15-925B-E4C06E25FD1F}" ShortID="242724784">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BRS_Birds_UK_Crows_Lite" ID="{B3D44E61-7B01-415F-BEC5-667ED7EF6A3A}">
+															<Language>SFX</Language>
+															<AudioFile>BRS_Birds_UK_Crows_Lite.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="696948523"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{481E7D13-4236-476B-B8C3-4EC9BDE8DAE7}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="-100"/>
+																<Property Name="PanY" Type="Real64" Value="100"/>
+																<Property Name="PanZ" Type="Real64" Value="100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="BRS_Birds_UK_Crows_Lite" ID="{B3D44E61-7B01-415F-BEC5-667ED7EF6A3A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BRS_Birds_UK_Crows_Lite_01" ID="{32913FCC-56A5-4FAB-A485-316FFFCEB7F4}" ShortID="664821836">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BRS_Birds_UK_Crows_Lite" ID="{03AB4D93-8812-4D76-AD5D-95DEFF94EAD9}">
+															<Language>SFX</Language>
+															<AudioFile>BRS_Birds_UK_Crows_Lite.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="696948523"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{9EE6C0EE-F348-4659-BB1B-FE127635937A}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="-50"/>
+																<Property Name="PanY" Type="Real64" Value="100"/>
+																<Property Name="PanZ" Type="Real64" Value="100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="BRS_Birds_UK_Crows_Lite" ID="{03AB4D93-8812-4D76-AD5D-95DEFF94EAD9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BRS_Birds_UK_Crows_Lite_02" ID="{898FF1FB-2B02-40CC-B204-FC6FEAB5C3D4}" ShortID="810946688">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BRS_Birds_UK_Crows_Lite" ID="{9C16BC42-69D2-4B0D-A9C6-4165DEDD9CD8}">
+															<Language>SFX</Language>
+															<AudioFile>BRS_Birds_UK_Crows_Lite.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="696948523"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{B3111FD8-412D-491B-B52F-7AFE6533D693}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="50"/>
+																<Property Name="PanY" Type="Real64" Value="100"/>
+																<Property Name="PanZ" Type="Real64" Value="100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="BRS_Birds_UK_Crows_Lite" ID="{9C16BC42-69D2-4B0D-A9C6-4165DEDD9CD8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BRS_Birds_UK_Crows_Lite_03" ID="{061D7A9E-2676-47DA-B624-A708E2B17E31}" ShortID="787382129">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BRS_Birds_UK_Crows_Lite" ID="{90F03308-3646-4E62-A243-D820E06E997D}">
+															<Language>SFX</Language>
+															<AudioFile>BRS_Birds_UK_Crows_Lite.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="696948523"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{9559CE69-E99A-41FC-B205-A678B41F7165}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="100"/>
+																<Property Name="PanY" Type="Real64" Value="100"/>
+																<Property Name="PanZ" Type="Real64" Value="100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="BRS_Birds_UK_Crows_Lite" ID="{90F03308-3646-4E62-A243-D820E06E997D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BRS_Birds_UK_Crows_Lite_04" ID="{56AB30A8-6202-4520-8166-3D05F97F8C58}" ShortID="321774281">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BRS_Birds_UK_Crows_Lite" ID="{BE1707FF-7CC5-4F99-94E1-E7D0317EDE19}">
+															<Language>SFX</Language>
+															<AudioFile>BRS_Birds_UK_Crows_Lite.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="696948523"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{EB8E3462-B3C5-42BC-9E1D-9DA96FD63518}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="-100"/>
+																<Property Name="PanY" Type="Real64" Value="50"/>
+																<Property Name="PanZ" Type="Real64" Value="100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="BRS_Birds_UK_Crows_Lite" ID="{BE1707FF-7CC5-4F99-94E1-E7D0317EDE19}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BRS_Birds_UK_Crows_Lite_05" ID="{4B11B8DF-6E2E-431E-83E1-403FBF15D38B}" ShortID="382005040">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BRS_Birds_UK_Crows_Lite" ID="{1AFB3C81-2496-4E63-B684-E6BB2E8A3771}">
+															<Language>SFX</Language>
+															<AudioFile>BRS_Birds_UK_Crows_Lite.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="696948523"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{120B59FB-524E-4962-BCCE-A579EE1B0084}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="-100"/>
+																<Property Name="PanZ" Type="Real64" Value="100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="BRS_Birds_UK_Crows_Lite" ID="{1AFB3C81-2496-4E63-B684-E6BB2E8A3771}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BRS_Birds_UK_Crows_Lite_06" ID="{ED3BFFBA-870F-4ED3-9D1E-30D21A6DA417}" ShortID="86686648">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BRS_Birds_UK_Crows_Lite" ID="{451E8EC9-EF06-4B2F-83E3-9067978365BB}">
+															<Language>SFX</Language>
+															<AudioFile>BRS_Birds_UK_Crows_Lite.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="696948523"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{39EC65FF-53A1-46CF-B17E-F8C701B8D3AB}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="-100"/>
+																<Property Name="PanY" Type="Real64" Value="-50"/>
+																<Property Name="PanZ" Type="Real64" Value="100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="BRS_Birds_UK_Crows_Lite" ID="{451E8EC9-EF06-4B2F-83E3-9067978365BB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BRS_Birds_UK_Crows_Lite_07" ID="{A90BD4B7-54FB-4F5E-A9D8-510EBC0FB8C2}" ShortID="453773486">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BRS_Birds_UK_Crows_Lite" ID="{F6C3EF07-6B3D-4486-940D-A27F62E5F1DE}">
+															<Language>SFX</Language>
+															<AudioFile>BRS_Birds_UK_Crows_Lite.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="696948523"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{C41B0933-5BAE-4B05-A945-A78AC4B53607}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="-100"/>
+																<Property Name="PanY" Type="Real64" Value="-100"/>
+																<Property Name="PanZ" Type="Real64" Value="100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="BRS_Birds_UK_Crows_Lite" ID="{F6C3EF07-6B3D-4486-940D-A27F62E5F1DE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BRS_Birds_UK_Crows_Lite_08" ID="{EA9C6469-516F-424F-9EFF-BEE8B3CDB945}" ShortID="821252112">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BRS_Birds_UK_Crows_Lite" ID="{C229A9AD-86EA-45DD-8EF4-144C18598DF8}">
+															<Language>SFX</Language>
+															<AudioFile>BRS_Birds_UK_Crows_Lite.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="696948523"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{88F91719-B671-45A9-BF23-3B67ACAA0D3B}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="-50"/>
+																<Property Name="PanY" Type="Real64" Value="-100"/>
+																<Property Name="PanZ" Type="Real64" Value="100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="BRS_Birds_UK_Crows_Lite" ID="{C229A9AD-86EA-45DD-8EF4-144C18598DF8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BRS_Birds_UK_Crows_Lite_09" ID="{4DFE91B3-D2BD-4E40-84BC-554DC0BCA605}" ShortID="528600361">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BRS_Birds_UK_Crows_Lite" ID="{08A2CCF7-0597-48E6-B065-2EADB57EC473}">
+															<Language>SFX</Language>
+															<AudioFile>BRS_Birds_UK_Crows_Lite.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="696948523"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{03123215-ACD4-4182-8BFF-0A75F0BDAEF5}">
+															<PropertyList>
+																<Property Name="PanY" Type="Real64" Value="-100"/>
+																<Property Name="PanZ" Type="Real64" Value="100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="BRS_Birds_UK_Crows_Lite" ID="{08A2CCF7-0597-48E6-B065-2EADB57EC473}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BRS_Birds_UK_Crows_Lite_10" ID="{82500B34-5DEA-455F-84A7-7D9A41B297A6}" ShortID="572007046">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BRS_Birds_UK_Crows_Lite" ID="{FF53E88B-F27C-4BAF-9D66-59E0B10A784F}">
+															<Language>SFX</Language>
+															<AudioFile>BRS_Birds_UK_Crows_Lite.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="696948523"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{A37BB1D6-5432-4568-A2D3-3E9BB6F5C92E}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="50"/>
+																<Property Name="PanY" Type="Real64" Value="-100"/>
+																<Property Name="PanZ" Type="Real64" Value="100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="BRS_Birds_UK_Crows_Lite" ID="{FF53E88B-F27C-4BAF-9D66-59E0B10A784F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BRS_Birds_UK_Crows_Lite_11" ID="{B8D29462-CD20-4BA4-8AFB-D6443082209A}" ShortID="628944181">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BRS_Birds_UK_Crows_Lite" ID="{6EB88B3D-0E40-4178-968B-DAADFE7CE701}">
+															<Language>SFX</Language>
+															<AudioFile>BRS_Birds_UK_Crows_Lite.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="696948523"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{52437F20-E439-47B8-8408-3490A5979FC3}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="100"/>
+																<Property Name="PanY" Type="Real64" Value="-100"/>
+																<Property Name="PanZ" Type="Real64" Value="100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="BRS_Birds_UK_Crows_Lite" ID="{6EB88B3D-0E40-4178-968B-DAADFE7CE701}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BRS_Birds_UK_Crows_Lite_12" ID="{0785C168-7A5F-4C16-9B98-BC53F2194C48}" ShortID="17965082">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BRS_Birds_UK_Crows_Lite" ID="{4EF8C1A4-A903-4FAA-9E70-3F68A4D66C0C}">
+															<Language>SFX</Language>
+															<AudioFile>BRS_Birds_UK_Crows_Lite.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="696948523"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{42090629-C757-43D1-B30C-03459DA7EF58}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="100"/>
+																<Property Name="PanY" Type="Real64" Value="50"/>
+																<Property Name="PanZ" Type="Real64" Value="100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="BRS_Birds_UK_Crows_Lite" ID="{4EF8C1A4-A903-4FAA-9E70-3F68A4D66C0C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BRS_Birds_UK_Crows_Lite_13" ID="{61176244-5E3B-4A17-B7AC-9C6232DCBDBE}" ShortID="466928601">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BRS_Birds_UK_Crows_Lite" ID="{7B3D274D-ACCD-40AA-97FF-BA717BF90763}">
+															<Language>SFX</Language>
+															<AudioFile>BRS_Birds_UK_Crows_Lite.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="696948523"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{BFC1C682-ACCE-4C4D-8BF5-D9AED203D41F}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="100"/>
+																<Property Name="PanZ" Type="Real64" Value="100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="BRS_Birds_UK_Crows_Lite" ID="{7B3D274D-ACCD-40AA-97FF-BA717BF90763}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BRS_Birds_UK_Crows_Lite_14" ID="{9215C2B4-8504-4102-998B-9A6FFB8D50CB}" ShortID="695795978">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BRS_Birds_UK_Crows_Lite" ID="{2FE78890-9189-4F2C-9491-28CD2599893C}">
+															<Language>SFX</Language>
+															<AudioFile>BRS_Birds_UK_Crows_Lite.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="696948523"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{A72A1E6D-09FE-43AD-8DD8-B077394CB620}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="100"/>
+																<Property Name="PanY" Type="Real64" Value="-50"/>
+																<Property Name="PanZ" Type="Real64" Value="100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="BRS_Birds_UK_Crows_Lite" ID="{2FE78890-9189-4F2C-9491-28CD2599893C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BRS_Birds_UK_Crows_Lite_15" ID="{85E7E1AE-0843-464E-A772-3F92A7245118}" ShortID="1017554421">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BRS_Birds_UK_Crows_Lite" ID="{D0CCBCBA-34D1-402A-8A15-E01ABA150AF0}">
+															<Language>SFX</Language>
+															<AudioFile>BRS_Birds_UK_Crows_Lite.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="696948523"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{30F7A3D0-7C1A-4D4F-BA88-79B0AB769FE0}">
+															<PropertyList>
+																<Property Name="PanY" Type="Real64" Value="100"/>
+																<Property Name="PanZ" Type="Real64" Value="100"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="BRS_Birds_UK_Crows_Lite" ID="{D0CCBCBA-34D1-402A-8A15-E01ABA150AF0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<BlendContainer Name="Blacksmith" ID="{4B837E42-B0B0-4A8A-8831-D425DBE5D110}" ShortID="2508160">
+											<PropertyList>
+												<Property Name="BlendBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="BRS_Fire_Campfire_Ashes_Sizzle_Snaps" ID="{01F2D46F-09BA-4BA0-81FD-4CF9716679B7}" ShortID="909212327">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-24</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Forge" ID="{484C5C32-2146-43E3-906B-597F7E6A0919}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BRS_Fire_Campfire_Ashes_Sizzle_Snaps" ID="{B45620A4-03B2-4DE9-935E-7BC041BBD831}">
+															<Language>SFX</Language>
+															<AudioFile>BRS_Fire_Campfire_Ashes_Sizzle_Snaps.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="100740229"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="BRS_Fire_Campfire_Ashes_Sizzle_Snaps" ID="{B45620A4-03B2-4DE9-935E-7BC041BBD831}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<RandomSequenceContainer Name="Anvil Hits" ID="{ACEA7B8E-0BBB-4167-9943-1639DA931A22}" ShortID="732820940">
+													<PropertyList>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{559C69A2-97EE-4CB7-810E-8F417537FB8D}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																			<Property Name="Min" Type="Real64" Value="-300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{BD7551E1-7373-4766-B6A7-6B11C4C08CEB}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="8"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-17</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Blacksmith_NPC" ID="{2FB40BA2-1DC3-49F2-A0F6-1A852CE668C8}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="SPLC-5320_FX_Oneshot_Blacksmith_Metal_Hits_Anvil_Resonant" ID="{E67C61F2-9102-491A-BFDB-92E09C66219B}" ShortID="245447487">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SPLC-5320_FX_Oneshot_Blacksmith_Metal_Hits_Anvil_Resonant" ID="{E4F14F4A-927D-4FAC-8898-81E552165C26}">
+																	<Language>SFX</Language>
+																	<AudioFile>SPLC-5320_FX_Oneshot_Blacksmith_Metal_Hits_Anvil_Resonant.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="912879919"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="SPLC-5320_FX_Oneshot_Blacksmith_Metal_Hits_Anvil_Resonant" ID="{E4F14F4A-927D-4FAC-8898-81E552165C26}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="SPLC-5334_FX_Oneshot_Blacksmith_Metal_Hits_Anvil_Impacts" ID="{3E788D5C-BC08-4702-BD2A-886DF71C1979}" ShortID="564078767">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SPLC-5334_FX_Oneshot_Blacksmith_Metal_Hits_Anvil_Impacts" ID="{68294F6B-6957-4B71-9017-65E911D24530}">
+																	<Language>SFX</Language>
+																	<AudioFile>SPLC-5334_FX_Oneshot_Blacksmith_Metal_Hits_Anvil_Impacts.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="328735525"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="SPLC-5334_FX_Oneshot_Blacksmith_Metal_Hits_Anvil_Impacts" ID="{68294F6B-6957-4B71-9017-65E911D24530}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+													<ObjectLists/>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<ObjectLists/>
+										</BlendContainer>
+										<BlendContainer Name="Rain" ID="{059AF061-4033-4108-9083-C115FC0578A6}" ShortID="676712924">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-21</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Ambisonic Rain_01" ID="{31218890-05F8-464F-ABDD-DD82E7B8D296}" ShortID="782940549">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Rain Bus" ID="{938E2D47-1AC3-4752-B304-3BB482819CA0}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Ambisonic Rain_01" ID="{C1981137-A6DD-4B49-B4FD-CC4304E427DC}">
+															<PropertyList>
+																<Property Name="ChannelConfigOverride" Type="int64" Value="514"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Ambisonic Rain_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="789663029"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Ambisonic Rain_01" ID="{C1981137-A6DD-4B49-B4FD-CC4304E427DC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Ambisonic Rain_02" ID="{10B3EC1E-2CF6-4B29-B127-2ED034F01C68}" ShortID="646066809">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{BBEFDC5E-E3E8-4A77-838A-E4917F7DDD6D}">
+																		<PropertyList>
+																			<Property Name="Max" Type="Real64" Value="15"/>
+																			<Property Name="Min" Type="Real64" Value="-13"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{2A1D2C29-1186-4883-A762-F9E0B51A2AF0}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="379"/>
+																			<Property Name="Min" Type="Real64" Value="-303"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{D4AB5CBD-F8B9-45CB-B182-03D7AF3B9AD0}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-7"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="ThunderBus" ID="{BD733584-1B0C-442D-B840-243683E2F1B1}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Ambisonic Rain_02" ID="{14D17474-0BB7-4AA2-951C-C073C18EC2AA}">
+															<PropertyList>
+																<Property Name="ChannelConfigOverride" Type="int64" Value="514"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Ambisonic Rain_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="225930884"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Ambisonic Rain_02" ID="{14D17474-0BB7-4AA2-951C-C073C18EC2AA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</BlendContainer>
+									</ChildrenList>
+									<ObjectLists/>
+								</BlendContainer>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+						<ActorMixer Name="Ambience_Dark_Cave" ID="{79FD72D2-1F12-4BA9-8D16-9CDFCA6B8698}" ShortID="798012410">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="Dark_Cave" ID="{915AFDEB-555D-4F4E-B18F-C41FDA5C3213}" ShortID="533146031">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ambisonic_Cave_Wind" ID="{E6E8BD2A-6A3B-4FEC-AB44-27C43C0C132D}" ShortID="926629318">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Wind" ID="{20F38784-4E48-4C7C-89F2-992A7947F0BD}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ambisonic_Cave_Wind" ID="{01142EC3-4BE9-43BA-8E20-7E19512D2597}">
+													<PropertyList>
+														<Property Name="ChannelConfigOverride" Type="int64" Value="514"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Ambisonic_Cave_Wind.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="548034503"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ambisonic_Cave_Wind" ID="{01142EC3-4BE9-43BA-8E20-7E19512D2597}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ambisonic_Cave_Dripping_Water" ID="{6571195E-CDC2-4AC9-994A-277690B86ABA}" ShortID="678095382">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Water" ID="{50219FCA-F501-469F-B5B6-8F513E4DE813}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ambisonic_Cave_Dripping_Water" ID="{6AB4DC1D-3905-4332-9EC6-ACAC78814A0E}">
+													<PropertyList>
+														<Property Name="ChannelConfigOverride" Type="int64" Value="514"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="2.03117321352842"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.946566157760813"/>
+														<Property Name="TrimEnd" Type="Real64" Value="13.70565"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Ambisonic_Cave_Dripping_Water.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="769446861"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ambisonic_Cave_Dripping_Water" ID="{6AB4DC1D-3905-4332-9EC6-ACAC78814A0E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ambisonic_Cave_Creatures" ID="{EEBDA129-F1C1-48F5-8A8D-6E077A4F102C}" ShortID="922112987">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68716D88-D780-48D7-B105-8F7F6588439C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Creatures" ID="{E32B8085-ED91-45A2-837E-11F22E7B3C8D}" WorkUnitID="{21D2C4E7-5646-4319-8971-8185F98E13AE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ambisonic_Cave_Creatures" ID="{EADB2F08-3D44-4676-816A-9CA62F8EEA08}">
+													<PropertyList>
+														<Property Name="ChannelConfigOverride" Type="int64" Value="514"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Ambisonic_Cave_Creatures.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="129300801"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ambisonic_Cave_Creatures" ID="{EADB2F08-3D44-4676-816A-9CA62F8EEA08}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</BlendContainer>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

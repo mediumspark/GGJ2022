@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4FA5AD6D-D6CE-46D8-8C81-8B0B8C4A0A06}" SchemaVersion="103" RootDocumentID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}" ParentDocumentID="{6B953C12-5A21-43CC-A86C-EA1C5F1C8C6B}">
+	<Busses>
+		<WorkUnit Name="SFX Audio Bus" ID="{4FA5AD6D-D6CE-46D8-8C81-8B0B8C4A0A06}" OwnerID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" PersistMode="Nested"/>
+	</Busses>
+</WwiseDocument>
