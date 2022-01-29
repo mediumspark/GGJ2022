@@ -10,3 +10,4 @@
         PlayerStats.instance.Mind += CardBase.MindMod;
     }
 }
+

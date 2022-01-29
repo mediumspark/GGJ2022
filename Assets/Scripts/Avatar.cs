@@ -6,7 +6,6 @@ public class Avatar : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
     public void OnBeginDrag(PointerEventData eventData)
     {
         transform.position = Input.mousePosition;
-        GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -17,7 +16,5 @@ public class Avatar : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
     public void OnEndDrag(PointerEventData eventData)
     {
         transform.position = Input.mousePosition;
-        GetComponent<CanvasGroup>().blocksRaycasts = true;
-
     }
 }

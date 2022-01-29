@@ -8,7 +8,7 @@ public class DeckManager : MonoBehaviour
 {
     public static DeckManager instance;
     DeckGenerator DeckGen;
-    public AdventureDeckScriptableObject ADeckSO; 
+    public AdventureDeckScriptableObject ADeckSO;
 
     [SerializeField]
     GameObject CurrentCard;
@@ -18,13 +18,13 @@ public class DeckManager : MonoBehaviour
     [SerializeField]
     List<Card> ItemDeck;
 
-    public List<Card> AdventureDeck; 
+    public List<Card> AdventureDeck;
 
     private void Awake()
     {
         instance = this;
         DeckGen = new DeckGenerator();
-        FillDeck(); 
+        FillDeck();
         CreateCard(ItemDeck[0]);
     }
 
@@ -35,73 +35,71 @@ public class DeckManager : MonoBehaviour
         switch (C.name)
         {
             case "Sword":
-                go.AddComponent<SwordEffect>(); 
+                go.AddComponent<SwordEffect>();
                 break;
 
             case "Shield":
-                go.AddComponent<ShieldEffect>(); 
+                go.AddComponent<ShieldEffect>();
                 break;
 
             case "Garden":
-                go.AddComponent<GardenEffect>(); 
+                go.AddComponent<GardenEffect>();
                 break;
 
-            case "AngryRat":
-                go.AddComponent<AngryRat>(); 
-                break; 
-                
+            case "EndlessMischief":
+                go.AddComponent<EndlessMischiefEffect>();
+                break;
+
             case "GardenEnd":
-                go.AddComponent<GardenEndEffect>(); 
+                go.AddComponent<GardenEndEffect>();
                 break;
 
             case "Club":
                 go.AddComponent<ClubEffect>();
-                break; 
+                break;
 
             default:
                 Debug.LogError("Not a CardName");
-                break; 
+                break;
         }
 
         go.GetComponent<CardEffectObject>().SetCardBase = C;
         CurrentCard = go;
 
-        CurrentCard.GetComponent<CardEffectObject>().SetCard(); 
+        CurrentCard.GetComponent<CardEffectObject>().SetCard();
     }
 
     public void FillDeck()
     {
         if (GameManager.instance.CurrentPhase == Phases.Bag)
         {
-            if (ADeckSO.Runs == 0)
-                for (int i = 0; i < 5; i++)
-                    ItemDeck.Add(DeckGen.ItemGeneration());
-            else
-                for (int i = 0; i < 3; i++)
-                    ItemDeck.Add(DeckGen.ItemGeneration()); 
+            for (int i = 0; i < 5; i++)
+                ItemDeck.Add(DeckGen.ItemGeneration());
 
         }
         else if (GameManager.instance.CurrentPhase == Phases.Adventure)
         {
-            AdventureDeck.AddRange(ADeckSO.AdventureCards); 
+            AdventureDeck.AddRange(ADeckSO.AdventureCards);
         }
     }
 
-    public void NextCard()
+    public IEnumerator<WaitForSeconds> NextCard()
     {
+        yield return new WaitForSeconds(0.5f);
+
         if (GameManager.instance.CurrentPhase == Phases.Bag)
         {
             ItemDeck.RemoveAt(0);
             Destroy(CurrentCard);
             if (ItemDeck.Count > 0)
             {
-                CreateCard(ItemDeck[0]);                
+                CreateCard(ItemDeck[0]);
             }
             else
             {
                 GameManager.instance.CurrentPhase = Phases.Adventure;
                 FillDeck();
-                NextCard();
+                StartCoroutine(NextCard());
             }
         }
         else
@@ -116,14 +114,14 @@ public class DeckManager : MonoBehaviour
             {
                 ItemDeck.Clear();
 
-                GameManager.instance.CurrentPhase = Phases.Bag;                
+                GameManager.instance.CurrentPhase = Phases.Bag;
                 FindObjectOfType<UIManager>().DescisionResult.text = PlayerStats.instance.EndAdventure();
                 FillDeck();
-                NextCard();
+                StartCoroutine(NextCard());
             }
         }
     }
-    
+
     /// <summary>
     /// Meant to be used for the "End of Run Cards" and for the game over to signified the player has tried this x amount of times
     /// </summary>
@@ -131,7 +129,7 @@ public class DeckManager : MonoBehaviour
     {
         ADeckSO.Runs++;
         if (PlayerStats.instance.Body <= 0 || PlayerStats.instance.Mind <= 0)
-            ADeckSO.Deaths++; 
+            ADeckSO.Deaths++;
     }
 
     public void AddToDeck()
@@ -144,34 +142,40 @@ public class DeckManager : MonoBehaviour
             }
             else
             {
+                FindObjectOfType<UIManager>().DescisionResult.text = "";
                 ItemCard.OnUseFromDeck();
-                NextCard();
+                CurrentCard.GetComponent<CardEffectObject>().MoveCard(MovementDirection.Down, NextCard());
             }
         }
         else
         {
-            PlayerStats.instance.PlayCard(); 
+            PlayerStats.instance.PlayCard();
         }
     }
 
     public void TrashorNegate()
     {
-        if (CurrentCard.TryGetComponent<ItemCardEffect>(out ItemCardEffect ItemCard))
-            NextCard();
-    }
+        if (PlayerStats.instance.Body <= 0 || PlayerStats.instance.Mind <= 0)
+        {
+            FindObjectOfType<UIManager>().DescisionResult.text = "You are too weak to add this to your deck";
+            if (CurrentCard.TryGetComponent<ItemCardEffect>(out ItemCardEffect ItemCard))
+                CurrentCard.GetComponent<CardEffectObject>().MoveCard(MovementDirection.Up, NextCard());
+        }
+    } 
 
-    
+
+
     /* Mind and Body Commits for Events will need to show results of your event choices and then lead
      */
 
     public void CommitToMind()
     {
         CurrentCard.GetComponent<CardEffectObject>().MindTrigger();
-        NextCard();
+        CurrentCard.GetComponent<CardEffectObject>().MoveCard(MovementDirection.Left, NextCard()); 
     }
     public void CommitToBody()
     {
         CurrentCard.GetComponent<CardEffectObject>().BodyTrigger();
-        NextCard();
+        CurrentCard.GetComponent<CardEffectObject>().MoveCard(MovementDirection.Right, NextCard());
     }
 }
