@@ -34,6 +34,7 @@ public class DeckManager : MonoBehaviour
 
         switch (C.name)
         {
+            #region Items
             case "Sword":
                 go.AddComponent<SwordEffect>();
                 break;
@@ -42,6 +43,42 @@ public class DeckManager : MonoBehaviour
                 go.AddComponent<ShieldEffect>();
                 break;
 
+            case "Club":
+                go.AddComponent<ClubEffect>();
+                break;
+
+            case "Bow":
+                go.AddComponent<BowEffect>();
+                break;
+            case "Sling":
+                go.AddComponent<SlingEffect>();
+                break;
+            case "Lantern":
+                go.AddComponent<LanternEffect>();
+                break;
+            case "Book":
+                go.AddComponent<BookEffect>();
+                break;
+            case "Lance":
+                go.AddComponent<LanceEffect>();
+                break;
+            case "GardenSword":
+                go.AddComponent<GardenSwordEffect>();
+                break;
+            case "DawkinsRazor":
+                go.AddComponent<DawkinsRazorEffect>();
+                break;
+            case "MawBlade":
+                go.AddComponent<MawBladeEffect>();
+                break;
+            case "RatsBane":
+                go.AddComponent<RatsBaneEffect>();
+                break;
+            case "CibophileJaws":
+                go.AddComponent<CibophileJawsEffect>();
+                break; 
+            #endregion
+            #region Events
             case "Garden":
                 go.AddComponent<GardenEffect>();
                 break;
@@ -54,12 +91,40 @@ public class DeckManager : MonoBehaviour
                 go.AddComponent<GardenEndEffect>();
                 break;
 
-            case "Club":
-                go.AddComponent<ClubEffect>();
+            case "GardenIntro":
+                go.AddComponent<GardenIntroEffect>();  
                 break;
 
+            case "TheGreatPit1":
+                go.AddComponent<TheGreatPitEffect_1>();
+                break;
+            case "TheGreatPit2":
+                go.AddComponent<TheGreatPitEffect_2>();
+                break;
+            case "TokenNightmare":
+                go.AddComponent<TokenNightmareEffect>();
+                break;
+            case "TheBumpInTheDarkness":
+                go.AddComponent<TheBumpInTheDarkness>();
+                break;
+            case "TorchGoblin":
+                go.AddComponent<TorchGoblinEffect>();
+                break;
+            case "TrapDoor":
+                go.AddComponent<TrapDoorEffect>();
+                break;
+            case "BedOfFlames":
+                go.AddComponent<BedofFlamesEffect>();
+                break;
+            case "LadderFromPit":
+                go.AddComponent<LadderFromThePitEffect>();
+                break;
+            case "DoorFromThePit":
+                go.AddComponent<DoorFromThePitEffect>();
+                break;
+            #endregion
             default:
-                Debug.LogError("Not a CardName");
+                go.AddComponent<UnderConstructionEffect>(); 
                 break;
         }
 
@@ -127,9 +192,7 @@ public class DeckManager : MonoBehaviour
     /// </summary>
     public void SubmitRun()
     {
-        ADeckSO.Runs++;
-        if (PlayerStats.instance.Body <= 0 || PlayerStats.instance.Mind <= 0)
-            ADeckSO.Deaths++;
+        if (PlayerStats.instance.Body <= 0 || PlayerStats.instance.Mind <= 0) { }
     }
 
     public void AddToDeck()
@@ -163,10 +226,7 @@ public class DeckManager : MonoBehaviour
         }
     } 
 
-
-
-    /* Mind and Body Commits for Events will need to show results of your event choices and then lead
-     */
+    /* Mind and Body Commits for Events will need to show results of your event choices and then lead*/
 
     public void CommitToMind()
     {

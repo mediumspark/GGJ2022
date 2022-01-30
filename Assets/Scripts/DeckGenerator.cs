@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq; 
-
+[System.Serializable]
 public class DeckGenerator 
 {
     Card[] CardDatabase;
 
     public DeckGenerator()
     {
-        CardDatabase = Resources.LoadAll<Card>("ScriptableObjects");
+        CardDatabase = Resources.LoadAll<Card>("ScriptableObjects/Cards");
     }
 
     public Card ItemGeneration()

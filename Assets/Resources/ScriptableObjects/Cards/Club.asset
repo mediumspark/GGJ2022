@@ -18,4 +18,4 @@ MonoBehaviour:
   EffectDesc: 
   EffectName: Club
   CardEffectPrefab: {fileID: 3940068901074690527, guid: 0839e93c4fc10324f9652f173b96e9cc, type: 3}
-  ForgroundSprite: {fileID: 21300000, guid: 36af45f817607e24a8da35618654b7cc, type: 3}
+  ForgroundSprite: {fileID: 21300000, guid: 8f3eccbeddf15094c9e255a16edba654, type: 3}

@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72835a3ddc6a0c3488c2fe4ea8830c9a, type: 3}
   m_Name: Dawkins Hole
   m_EditorClassIdentifier: 
-  Runs: 0
-  Deaths: 0
   AdventureCards: []
+  BackgroundImage: {fileID: 21300000, guid: 77fb666aa8cb23e4d9f1f3c7db732abd, type: 3}

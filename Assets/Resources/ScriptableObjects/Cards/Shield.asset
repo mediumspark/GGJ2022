@@ -19,4 +19,4 @@ MonoBehaviour:
     way possible '
   EffectName: Shield
   CardEffectPrefab: {fileID: 3940068901074690527, guid: 0839e93c4fc10324f9652f173b96e9cc, type: 3}
-  ForgroundSprite: {fileID: 7482667652216324306, guid: 67cb205d7ac199d4b829e3f5e709413f, type: 3}
+  ForgroundSprite: {fileID: 21300000, guid: 8271bdabc8271054ebd75f19492db910, type: 3}

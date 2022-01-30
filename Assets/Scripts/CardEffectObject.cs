@@ -109,19 +109,9 @@ public class EventCardEffect : CardEffectObject
 
 }
 
-
-
-public class GardenIntroEffect : EventCardEffect { }
-public class TheGreatPitEffect_1 : EventCardEffect { }
-public class TheGreatPitEffect_2 : EventCardEffect { }
-public class TokenNightmareEffect : EventCardEffect { }
-public class TheBumpInTheDarkness : EventCardEffect { }
-public class TorchGoblinEffect : EventCardEffect { }
-public class TrapDoorEffect : EventCardEffect { }
 public class TalkativeSpiderlingEffect : EventCardEffect { }
 public class TrapWallEffect : EventCardEffect { }
 public class BedofFlamesEffect : EventCardEffect { }
-public class LadderFromThePitEffect : EventCardEffect { }
 public class DoorFromThePitEffect : EventCardEffect { }
 public class TheDoorAtTheEndOfThePit_1 : EventCardEffect { }
 public class TheDoorAtTheEndOfThePit_2 : EventCardEffect { }

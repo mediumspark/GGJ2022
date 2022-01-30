@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da896d25423a6b4b8e036e2ddac73b1, type: 3}
   m_Name: Bow
   m_EditorClassIdentifier: 
-  CardType: 0
+  CardType: 1
   MindMod: 0
   BodyMod: 0
   EffectDesc: 
-  EffectName: 
-  CardEffectPrefab: {fileID: 0}
-  ForgroundSprite: {fileID: 0}
+  EffectName: Bow
+  CardEffectPrefab: {fileID: 3940068901074690527, guid: 0839e93c4fc10324f9652f173b96e9cc, type: 3}
+  ForgroundSprite: {fileID: 21300000, guid: 437b6f2b2cb5ace44aff72d559e07326, type: 3}
